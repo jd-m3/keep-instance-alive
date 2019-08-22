@@ -7,6 +7,7 @@
   require("dotenv").config();
   const { Builder, By, Key, until } = require("selenium-webdriver");
   const chrome = require("selenium-webdriver/chrome");
+  const firefox = require("selenium-webdriver/firefox");
 
   // Set default screen resolution (for headless instance)
   const screenResolution = {
