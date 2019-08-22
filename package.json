@@ -1,0 +1,16 @@
+{
+  "name": "keep-instance-alive",
+  "version": "1.0.0",
+  "description": "Keep ServiceNow developer instance alive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ServiceNow",
+    "ServiceNow Developer Instance",
+    "ServiceNow Instance"
+  ],
+  "author": "JD Macarubbo <jdmacarubbo@comscentre.com>",
+  "license": "MIT"
+}
