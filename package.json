@@ -4,7 +4,10 @@
   "description": "Keep ServiceNow developer instance alive.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webdriver": "java -jar selenium-server/selenium-server-standalone-3.13.0.jar",
+    "index": "node index.js",
+    "app": "concurrently --kill-others \"npm run webdriver\" \"npm run index\""
   },
   "keywords": [
     "ServiceNow",
