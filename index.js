@@ -1,6 +1,6 @@
 /**
  * Script replicates the manual way of refreshing a
- * ServiceNow developer instance. I know, I'm lazy. 
+ * ServiceNow developer instance. I know, I'm lazy.
  */
 (async () => {
   // load dependencies
@@ -22,6 +22,12 @@
     .forBrowser(webdriver)
     .setChromeOptions(
       new chrome.Options()
+        .headless()
+        .addArguments(args)
+        .windowSize(screenResolution)
+    )
+    .setFirefoxOptions(
+      new firefox.Options()
         .headless()
         .addArguments(args)
         .windowSize(screenResolution)
