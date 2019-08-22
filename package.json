@@ -19,6 +19,7 @@
   "dependencies": {
     "concurrently": "^4.1.1",
     "dotenv": "^8.0.0",
+    "prompts": "^2.2.1",
     "selenium-webdriver": "^4.0.0-alpha.4"
   }
 }
