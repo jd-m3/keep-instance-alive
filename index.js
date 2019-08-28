@@ -82,9 +82,9 @@
   } catch (e) {
 
   } finally {
-    // Wait 5 seconds before terminating Selenium
+    // Wait 5 minutes before terminating Selenium
     setTimeout(async () => {
       await driver.quit();
-    }, 5000);
+    }, 300000);
   }
 })();
