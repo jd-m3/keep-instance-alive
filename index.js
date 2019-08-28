@@ -38,9 +38,11 @@
   // Refreshing of instance starts here.
   try {
     // Go to servicenow
+    console.log('Redirecting to https://developer.servicenow.com/');
     await driver.get("https://developer.servicenow.com/");
 
     // click login link
+    console.log('Logging in..');
     await driver.findElement(By.id("dp-hdr-login-link")).click();
 
     // enter username
@@ -71,6 +73,7 @@
     );
 
     // go to instances
+    console.log('Checking your instance...');
     await driver.get("https://developer.servicenow.com/app.do#!/instance");
 
     // wake up instance
@@ -78,6 +81,8 @@
       until.elementLocated(By.id("instanceWakeUpBtn")),
       1000
     );
+
+    console.log('Waking your instance up!');
     await driver.wait(until.elementIsVisible(wakeInstanceBtn), 1000).click();
   } catch (e) {
 
