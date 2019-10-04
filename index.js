@@ -79,11 +79,11 @@
     // wake up instance
     let wakeInstanceBtn = driver.wait(
       until.elementLocated(By.id("instanceWakeUpBtn")),
-      1000
+      5000
     );
 
     console.log('Waking your instance up!');
-    await driver.wait(until.elementIsVisible(wakeInstanceBtn), 1000).click();
+    await driver.wait(until.elementIsVisible(wakeInstanceBtn), 5000).click();
   } catch (e) {
 
   } finally {
