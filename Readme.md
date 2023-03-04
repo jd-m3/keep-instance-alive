@@ -1,3 +1,5 @@
+**NOTICE: This repository is now archived, you can read the code and understand the thought process, but don't expect this to work anymore**
+
 # Keep your ServiceNow Developer Instance Alive!
 
 Very typical automation script that wakes your ServiceNow developer instance. Once setup, you can run one command everyday to refresh the instance (or create a CRON job for maximum efficiency).
